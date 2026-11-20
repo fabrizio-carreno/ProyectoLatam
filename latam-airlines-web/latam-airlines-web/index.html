@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto educativo inspirado en LATAM Airlines. Explora destinos y experiencias de viaje.">
+  <title>LATAM — El viaje comienza aquí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="LATAM inicio"><span class="brand-mark">L</span><span>LATAM</span></a>
+  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav class="main-nav">
+    <a class="active" href="index.html">Inicio</a><a href="pages/destinos.html">Destinos</a>
+    <a href="pages/experiencia.html">Experiencia</a><a href="pages/nosotros.html">Nosotros</a>
+    <a class="nav-cta" href="pages/contacto.html">Contacto <span>↗</span></a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-image"></div><div class="hero-shade"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow light">CONECTAMOS PERSONAS, CULTURAS Y DESTINOS</p>
+      <h1>El mundo es<br><em>más grande</em><br>cuando lo exploras.</h1>
+      <p class="hero-copy">Descubre nuevos lugares, vive otras culturas y encuentra inspiración en cada viaje.</p>
+      <div class="hero-actions"><a class="button button-light" href="pages/destinos.html">Explorar destinos <span>↗</span></a><a class="text-link light-link" href="pages/nosotros.html">Conoce LATAM <span>→</span></a></div>
+    </div>
+    <div class="hero-bottom"><span>VIAJAR NOS ACERCA</span><span class="scroll-cue">DESLIZA PARA DESCUBRIR ↓</span><span>01 / 04</span></div>
+  </section>
+
+  <section class="booking-wrap section-shell reveal">
+    <div class="booking-heading"><div><p class="eyebrow">TU PRÓXIMA AVENTURA</p><h2>¿A dónde quieres ir?</h2></div><span class="demo-tag">BUSCADOR DEMOSTRATIVO</span></div>
+    <form class="flight-form" id="flightForm">
+      <label>Origen <span class="field-icon">⌖</span><select id="origin" required><option value="">Selecciona origen</option><option>Lima (LIM)</option><option>Santiago (SCL)</option><option>Bogotá (BOG)</option><option>São Paulo (GRU)</option></select></label>
+      <label>Destino <span class="field-icon">✈</span><select id="destination" required><option value="">Selecciona destino</option><option>Cusco (CUZ)</option><option>Buenos Aires (EZE)</option><option>Río de Janeiro (GIG)</option><option>Madrid (MAD)</option><option>Miami (MIA)</option></select></label>
+      <label>Fecha de salida <span class="field-icon">▦</span><input id="departure" type="date" required></label>
+      <label>Pasajeros <span class="field-icon">♙</span><select id="passengers"><option>1 adulto</option><option>2 adultos</option><option>3 adultos</option><option>4 adultos</option></select></label>
+      <button class="button button-dark" type="submit">Buscar vuelos <span>→</span></button>
+    </form>
+    <p class="form-note" id="formMessage">Este buscador es una demostración académica; no consulta tarifas ni reserva vuelos.</p>
+  </section>
+
+  <section class="section-shell intro-grid">
+    <div class="intro-title reveal"><p class="eyebrow">MÁS CERCA DE LO QUE IMAGINAS</p><h2>Hay lugares que<br>te cambian la <em>mirada.</em></h2></div>
+    <div class="intro-text reveal"><p>Desde paisajes sorprendentes hasta ciudades llenas de energía, Latinoamérica está hecha de historias que esperan ser descubiertas.</p><a class="text-link" href="pages/destinos.html">Encuentra tu próximo destino <span>↗</span></a></div>
+  </section>
+
+  <section class="destinations-section">
+    <div class="section-shell section-head reveal"><div><p class="eyebrow">INSPÍRATE Y DESCUBRE</p><h2>Destinos que dejan huella</h2></div><a class="text-link" href="pages/destinos.html">Ver todos los destinos <span>↗</span></a></div>
+    <div class="destination-grid section-shell">
+      <a class="destination-card card-large reveal" href="pages/destinos.html"><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=85" alt="Machu Picchu en Perú"><span class="card-index">01 / PERÚ</span><span class="card-caption"><strong>Perú</strong><small>Historia que se siente</small></span></a>
+      <a class="destination-card reveal" href="pages/destinos.html"><img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=900&q=85" alt="Río de Janeiro"><span class="card-index">02 / BRASIL</span><span class="card-caption"><strong>Brasil</strong><small>Ritmo que inspira</small></span></a>
+      <a class="destination-card reveal" href="pages/destinos.html"><img src="https://images.unsplash.com/photo-1503614472-8c93d56cd938?auto=format&fit=crop&w=900&q=85" alt="Montañas de Patagonia"><span class="card-index">03 / CHILE</span><span class="card-caption"><strong>Chile</strong><small>Naturaleza sin límites</small></span></a>
+    </div>
+  </section>
+
+  <section class="experience-band">
+    <div class="experience-photo"></div><div class="experience-content reveal"><p class="eyebrow light">EL VIAJE TAMBIÉN ES PARTE DEL DESTINO</p><h2>Una experiencia<br>que va <em>contigo.</em></h2><p>Conoce las alternativas de viaje, los servicios y los detalles que forman parte de la experiencia LATAM.</p><a class="button button-light" href="pages/experiencia.html">Descubrir la experiencia <span>↗</span></a></div>
+  </section>
+
+  <section class="closing-cta section-shell reveal"><p class="eyebrow">EL SIGUIENTE CAPÍTULO TE ESPERA</p><h2>Tu próxima historia<br>empieza <em>en algún lugar.</em></h2><a class="button button-dark" href="pages/destinos.html">Inspírate para viajar <span>↗</span></a></section>
+</main>
+<footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span>LATAM</span></a><p>Proyecto educativo independiente inspirado en LATAM Airlines. No representa al sitio oficial.</p><div><a href="https://www.latamairlines.com/pe/es" target="_blank" rel="noopener">Sitio oficial LATAM ↗</a><span>© 2026 · Proyecto de aprendizaje</span></div></footer>
+<script src="js/main.js"></script>
+</body></html>
